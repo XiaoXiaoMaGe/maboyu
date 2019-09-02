@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册_华为账号</title>
+    <!--引入jQuery库-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!--引入样式重置-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入共同样式-->
+    <link rel="stylesheet" href="css/comment.css">
+    <!--引入注册界面样式-->
+    <link rel="stylesheet" href="css/login1.css">
+    <!--引入本界面js文件-->
+    <script src="js/login1.js"></script>
+</head>
+<body>
+
+<!--设置通用的头部标签-->
+<header>
+    <div class="user-head wrapLittle clear">
+        <div class="user-head-icon">
+            <img src="img/enter_img/head-top.png" alt="">
+        </div>
+        <div class="user-head-title">
+            <b style="margin-right:15px">|</b>
+            <b>华为商城</b>
+        </div>
+    </div>
+</header>
+
+<!--设置网页主体-->
+<div>
+    <div class="login_body">
+        <!--设置标题栏-->
+        <div class="login-part-top">
+            <a href=""  class="login-active tab-phone">
+                <i class="login_phoneIcon"></i>
+                <span>手机号</span>
+            </a>
+            <a href="login2.html" class="tab-email">
+                <i class="login_emileIcon"></i>
+                <span>电子邮箱</span>
+            </a>
+            <div id="return_enten">
+                已有华为账号 <a href="enter.html">登录></a>
+            </div>
+        </div>
+        <!--设置注册框-->
+        <div class="reg-wrap">
+            <!--设置国家和地区-->
+            <div class="input-container">
+                <div class="input-left">
+                    <span>国家/地区</span>
+                </div>
+                <div class="input-right">
+                    <input type="text" value="中国（+86）">
+                </div>
+            </div>
+            <!--手机号码-->
+            <div class="input-container">
+                <div class="input-left">
+                    <span>+86（中国）</span>
+                </div>
+                <div class="input-right">
+                    <input type="tel" placeholder="请输入电话号码" id="phone">
+                </div>
+            </div>
+            <!--验证条-->
+            <div class="input-container" id="btn-verify">
+                <input type="button" value="点击按钮进行验证">
+            </div>
+            <!--短信验证码-->
+            <div class="input-container relative">
+                <div class="input-left">
+                    <span>短信验证码</span>
+                </div>
+                <div class="input-right">
+                    <input type="text" placeholder="请输入短信验证码">
+                </div>
+                <div class="btn-note">
+                    <input type="button" value="获取验证码">
+                </div>
+            </div>
+            <!--密码-->
+            <div class="input-container">
+                <div class="input-left">
+                    <span>密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码</span>
+                </div>
+                <div class="input-right">
+                    <input type="search" placeholder="请输入密码" id="password" class="password1">
+                </div>
+            </div>
+            <!--确认密码-->
+            <div class="input-container">
+                <div class="input-left">
+                    <span>确认密码</span>
+                </div>
+                <div class="input-right">
+                    <input type="search" placeholder="请再次输入密码" class="password1">
+                </div>
+            </div>
+            <!--出生日期-->
+            <div class="input-container">
+                <div class="input-left">
+                    <span>出生日期</span>
+                </div>
+                <div class="input-right">
+                    <input type="date">
+                </div>
+            </div>
+            <!--注册按钮-->
+            <div class="input-container" id="btnSubmit">
+                <input type="button" value="注册" id="login">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--设置尾部-->
+<div class="foot-line">
+    <!--就是为了添加那条线-->
+</div>
+<footer>
+    <div class="foot-1">
+        <a href="">华为帐号与云空间用户协议</a>
+        |
+        <a href="">关于华为帐号与云空间隐私的声明</a>
+        |
+        <a href="">常见问题</a>
+        |
+        <a href="">Cookies</a>
+    </div>
+    <div class="foot-2">
+        <p>
+            Copyright © 2011-2019  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9
+        </p>
+    </div>
+</footer>
+</body>
+</html>

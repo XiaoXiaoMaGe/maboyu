@@ -1,0 +1,264 @@
+
+body{
+    background: #EBEBEB;
+}
+.head-safe{
+    background: #FFFBE4;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #989898;
+}
+/*设置主体*/
+.part{
+    background: #081638;
+}
+.part-left{
+    height: 600px;
+}
+/*设置登录框*/
+.part-right1{
+    width: 380px;
+    height: 530px;
+    margin:30px 10px;
+    background: white;
+    float: right;
+}
+.part-right1-head{
+    color: #333333;
+}
+.part-right1-head span{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    font-size: 24px;
+    margin: 24px 0;
+}
+.part-right1-head span:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/*输入账号密码的*/
+.part-body1{
+    margin: 20px auto 0;
+    width: 80%;
+}
+.part-body1 table{
+    width: 100%;
+}
+.part-body1 .userNum{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    border: none;
+    border-bottom: #CDCDCD solid 1px;
+    outline: none;
+}
+/*设置登录按钮*/
+.enterBtn input{
+    width: 100%;
+    height: 46px;
+    display: inline-block;
+    background: #B40707;
+    border-radius: 23px;
+    font-size: 20px;
+    color: whitesmoke;
+    border: none;
+}
+.enterBtn input:hover{
+    background: orangered;
+    cursor: pointer;
+}
+
+/*短信验证码登录的*/
+.part-right2{
+    width: 380px;
+    height: 530px;
+    margin:30px 10px;
+    background: white;
+    float: right;
+    display: none;
+}
+.part-right2-head{
+    margin: 20px 26px 46px;
+}
+.part-right2-head span{
+    font-size: 16px;
+    color: blue;
+}
+.part-right2-head span:hover{
+    cursor: pointer;
+}
+.part-right2-body{
+    padding: 0 30px;
+}
+.part-right2-body-top,.part-right2-body-center{
+    border-bottom: #d9d9d9 1px solid;
+}
+.part-right2-body-top span{
+    display: inline-block;
+    width: 76px;
+    font-size: 16px;
+    text-align: center;
+    border-right: 1px #d9d9d9 solid;
+}
+.part-right2-body-top input,.part-right2-body-center input{
+    display: inline-block;
+    width:234px;
+    height: 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.part-right2-body-center span{
+    display: inline-block;
+    color: blue;
+    float: right;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+}
+.part-right2-body-center span:hover{
+    cursor: pointer;
+}
+
+
+
+/*设置记住账号*/
+.rember td{
+    height: 46px;
+}
+.rember .set_more{
+    float: right;
+    color: deepskyblue;
+}
+.rember .set_more:hover{
+    color: dodgerblue;
+    cursor: pointer;
+}
+.rember div{
+    right: -20px;
+    top:40px;
+    box-shadow: 0 0 10px grey;
+    padding: 5px 15px;
+    z-index:2;
+}
+.rember li{
+    font-size: 15px;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: #989898 solid 2px;
+}
+.rember li:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*设置下面的选项栏*/
+.part-right1 tr:nth-of-type(6){
+    text-align: center;
+}
+.part-right1 tr:nth-of-type(6) span{
+    color: deepskyblue;
+    display: inline-block;
+    padding: 0 10px 0 9px;
+}
+.part-right1 tr:nth-of-type(6) span:hover{
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+/*设置扫码登录框*/
+.part-body2{
+    display: none;
+}
+.part-body2-top {
+    height: 262px;
+    width: 100%;
+}
+.part-body2-help{
+    width: 146px;
+    height: 200px;
+    position: absolute;
+    top: 25px;
+    right: 19px;
+    background: url("../img/enter_img/part_body2_help.png");
+    opacity: 0;
+    transition: 1s;
+}
+.part-body2-code{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 50px;
+    left: 110px;
+    transition: 1s;
+}
+.part-body2-bottom span{
+    color: blue;
+}
+.part-body2-bottom p{
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*设置登录框的尾部*/
+.part-foot{
+    bottom: 0;
+    width:100% ;
+    text-align: center;
+}.part-foot1 span{
+    display: inline;
+    margin: 0 20px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #989898;
+}
+.part-foot1 i{
+    position: absolute;
+    width: 94px;
+    height: 1px;
+}
+.part-foot1 i:nth-of-type(1){
+    top: 6px;
+    left: 40px;
+    background:url("../img/enter_img/part_foot_left.png")no-repeat center/cover;
+}
+.part-foot1 i:nth-of-type(2){
+    top: 6px;
+    right: 40px;
+    background:url("../img/enter_img/part_foot_right.png")no-repeat center/cover;
+}
+
+/*设置其他的三个登陆方式*/
+
+.part-foot2 span{
+    display: inline-block;
+    padding: 0 10px 10px;
+}
+.part-foot2 a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.part-foot2 span:nth-of-type(1) a {
+    background:url("../img/comment_img/third_login.png")no-repeat ;
+    background-position: -70px -4px;
+
+}
+.part-foot2 span:nth-of-type(2) a {
+    background:url("../img/comment_img/third_login.png")no-repeat ;
+    background-position: -8px -4px;
+}
+.part-foot2 span:nth-of-type(3) a {
+    background:url("../img/comment_img/third_login.png")no-repeat ;
+    background-position: -130px -4px;
+}
+
+/*设置点击时候的样式的变换*/
+.enterAtive{
+    color: red;
+}

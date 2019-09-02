@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录_华为账号</title>
+    <!--引入jQuery库-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!--引入样式重置-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入共同样式-->
+    <link rel="stylesheet" href="css/comment.css">
+    <!--引入登录界面样式-->
+    <link rel="stylesheet" href="css/enter.css">
+    <!--引入本界面的js文件-->
+    <script src="js/enter.js"></script>
+</head>
+<body>
+
+<!--设置通用的头部标签-->
+<header>
+    <div class="user-head wrapLittle clear">
+        <div class="user-head-icon">
+            <img src="img/enter_img/head-top.png" alt="">
+        </div>
+        <div class="user-head-title">
+            <b style="margin-right:15px">|</b>
+            <b>华为商城</b>
+        </div>
+    </div>
+</header>
+
+<!--设置网页提示安全信息-->
+<div class="head-safe">
+    <p>注意：依据《网络安全法》，为保障您的账号安全与正常使用，请尽快绑定您的手机号，感谢您的支持和理解！</p>
+</div>
+<!--设置网页主体-->
+<div class="part">
+    <div class="part-left wrapLittle" style="background:url('img/enter_img/login_part_bg.png')center;">
+        <!--设置账号和扫码登录框-->
+        <div class="part-right1 relative">
+            <!--设置账号登录头部-->
+            <div class="part-right1-head">
+                <span class="enterAtive">账号登录</span>
+                <span style="border-left:#CDCDCD solid 2px">扫码登录</span>
+            </div>
+
+            <!--设置账号信息中间部分的账号登录-->
+            <div class="part-body1">
+                <table>
+                    <tr>
+                        <td>
+                            <input id="phone" class="userNum" type="text" placeholder="手机号/邮箱地址/华为号">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="password" class="userNum" type="password" placeholder="输入密码">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 14px 0">
+                            <span class="phoneIcon" title="短信验证码">
+                                <i></i>
+                                短息验证码登录
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="enterBtn">
+                            <input id="login" type="button" value="登录">
+                        </td>
+                    </tr>
+                    <tr class="rember">
+                        <td class="relative">
+                            <input type="checkbox" name="sex" id="rember_number"title="在公共电脑上不要选择此项，建议在个人电脑上面选择此项"/>
+                            <label for="rember_number" title="在公共电脑上不要选择此项，建议在个人电脑上面选择此项">记住华为账号</label>
+                            <span>
+                                <a class="set_more">更多</a>
+                                <div class="absolute blockDisplay set_more_div">
+                                    <ul>
+                                        <li>遇到问题</li>
+                                        <li>更换手机号</li>
+                                        <li>安全中心</li>
+                                    </ul>
+                                </div>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="login1.html"><span style="border-right:deepskyblue 1px solid">注册账号</span></a>
+                            <a href="forgetPassword.html"><span>忘记密码？</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--设置账号登录信息中间部分的扫码登陆-->
+            <div class="part-body2">
+                <div class="part-body2-top relative">
+                    <div class="part-body2-help"></div>
+                    <div class="part-body2-code">
+                        <img src="img/enter_img/part_body2_code.png" alt="">
+                    </div>
+                </div>
+                <div class="part-body2-bottom">
+                    <p>使用<span>华为移动服务APP</span>扫一扫</p>
+                    <p>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+                </div>
+            </div>
+
+            <!--设置账号登录尾部-->
+            <div class="part-foot absolute">
+                <div class="part-foot1">
+                    <i></i>
+                    <span>其他登陆方式</span>
+                    <i></i>
+                </div>
+                <div class="part-foot2 relative">
+                    <span>
+                        <a href=""></a>
+                    </span>
+                    <span>
+                        <a href=""></a>
+                    </span>
+                    <span>
+                        <a href=""></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!--设置短信验证码登录框-->
+        <div class="part-right2 relative">
+            <!--返回按钮-->
+            <div class="part-right2-head">
+                <span>&lt;返回</span>
+            </div>
+            <!--手机、短信框-->
+            <div class="part-right2-body">
+                <table>
+                    <tr>
+                        <td class="part-right2-body-top">
+                            <span>+86</span>
+                            <input class="userNum" type="text" placeholder="手机号">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="part-right2-body-center">
+                            <input class="userNum" type="password" placeholder="短信验证码">
+                            <span>获取验证码</span>
+                        </td>
+                    </tr>
+                    <!--记住账号-->
+                    <tr class="rember">
+                        <td class="relative">
+                            <input type="checkbox" name="sex" id="rember_number2"title="在公共电脑上不要选择此项，建议在个人电脑上面选择此项"/>
+                            <label for="rember_number2" title="在公共电脑上不要选择此项，建议在个人电脑上面选择此项">记住华为账号</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="enterBtn">
+                            <input type="button" value="登录">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--设置尾部-->
+<footer>
+    <div class="foot-1">
+        <a href="">华为帐号与云空间用户协议</a>
+        |
+        <a href="">关于华为帐号与云空间隐私的声明</a>
+        |
+        <a href="">常见问题</a>
+        |
+        <a href="">Cookies</a>
+    </div>
+    <div class="foot-2">
+        <p>
+            Copyright © 2011-2019  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

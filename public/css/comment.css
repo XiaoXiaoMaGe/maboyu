@@ -1,0 +1,80 @@
+/*绝对定位和相对定位*/
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+/*大的页面宽度*/
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+}
+/*小的页面宽度*/
+.wrapLittle{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*设置浮动撑开盒子*/
+.clear{
+    zoom: 1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*设置盒子的隐藏*/
+.blockDisplay{
+    display: none;
+}
+
+/*设置登录和注册界面的共同部分*/
+header{
+    background:#EBEBEB ;
+}
+header .user-head div{
+    width: 143px;
+    height: 54px;
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    margin-right:15px;
+}
+header .user-head-icon{
+    margin-left:120px ;
+}
+header img{
+    margin:7px  0 0 ;
+}
+footer div{
+    text-align: center;
+    background: #EBEBEB;
+    margin: 10px 0;
+}
+footer p,footer a{
+    margin: 10px;
+    color: #999999;
+}
+footer a:hover{
+    text-decoration: underline darkgray;
+}
+
+/*设置手机验证码登录的图标*/
+.phoneIcon{
+    color: deepskyblue;
+}
+.phoneIcon:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
+.phoneIcon i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background:url("../img/comment_img/phoneIcon.png") no-repeat;
+    margin-bottom: -3px;
+}
+

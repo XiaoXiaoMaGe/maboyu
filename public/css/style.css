@@ -1,0 +1,286 @@
+body{
+    background: #254346;
+    text-align: center;
+    overflow-x:hidden;
+    margin: 0 auto;
+}
+/*设置标题部分*/
+.title2{
+    background: url("../img/MT-title.jpg") no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.title2 #title2-a{
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    margin-left: 360px;
+}
+.title2 ul{
+    overflow: hidden;
+    height: 60px;
+}
+.title2 li{
+    font-size: 14px;
+    float: left;
+    padding: 20px 6px;
+}
+.title2 li a{
+    color: white;
+}
+.title2 li a:hover{
+    text-decoration:underline white;
+}
+.title2 li div{
+    padding:0 180px 0 80px;
+}
+/*需要变成绝对定位的a标签*/
+.i-part-1 a,.i-part-2 a,.i-part-3 a,.i-part-4 a,.i-part-5-1 a,.footer a{
+    position: absolute;
+}
+/*设置头部的样式*/
+
+/*设置导航栏*/
+.nav{
+    background:#E8F8FF ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+.nav ul{
+    padding: 19px 320px;
+    overflow: hidden;
+    background:#F6FCF0 ;
+}
+.nav li{
+    width: 20%;
+    font-size:22px;
+    float: left;
+}
+.nav li a{
+    display: inline-block;
+    padding: 0 70px 0 0;
+    color: #254346;
+    font-weight: bold;
+    border-right: #254346 2px solid;
+}
+
+/*设置优惠区*/
+.i-lowPrice a{
+    position: absolute;
+    width: 288px;
+    height: 313px;
+}
+
+
+
+/*设置数码配件*/
+.i-part-4-line{
+    overflow: hidden;
+}
+.i-part-4-list{
+    width: 25%;
+    padding:0.5%;
+    float: left;
+    overflow: hidden;
+}
+.i-part-4-bg{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+}
+.i-part-4-bgNew{
+    width: 100%;
+    height: 270px;
+    background: url("../img/iPart4-bg1.jpg")center/cover;
+    transition:  transform 1s;
+}
+.i-part-4-text{
+    background:white;
+    transition: 1.5s;
+}
+.i-part-4-text h3{
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+    overflow: hidden;
+    color: black;
+}
+.i-part-4-text p{
+    height: 27px;
+    line-height: 27px;
+    font-size: 16px;
+    color: #808080;
+    overflow: hidden;
+}
+.i-part-4-text h4{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-size: 22px;
+    color: red;
+    overflow: hidden;
+    text-align: center;
+    margin:10px auto;
+}
+.i-part-4-text span{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background: red;
+    font-size: 28px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.i-part-4-list:hover .i-part-4-bgNew{
+    transform:scale(1.04);
+}
+.i-part-4-list:hover .i-part-4-text{
+    background: #222222;
+}
+.i-part-4-list:hover .i-part-4-text h3{
+    color: white;
+}
+/*设置轮播图的样式*/
+.i-part-4-slideshow{
+    height: 200px;
+    display: none;
+}
+.part4Active{
+    display:block ;
+}
+/*设置轮播图的下标*/
+.i-part-4-4 ul{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+}
+.i-part-4-4 li{
+    -webkit-box-orient:horizontal;
+    width: 20px;
+    height: 20px;
+    margin: -20px 20px 0;
+    background: gold;
+    border-radius: 50%;
+}
+
+/*设置抽奖界面*/
+.i-part-5-2-zongDe{
+    height: 500px;
+    padding-right: 50px;
+}
+/*设置左边的抽奖框*/
+.i-part-5-2-lucky div{
+    position: absolute;
+    width: 220px;
+    height: 160px;
+    transition: transform 2s;
+}
+.i-part-5-2-lucky div:hover{
+    cursor: pointer;
+}
+.i-part-5-2-lucky img{
+    width: 220px;
+    height: 160px;
+}
+.transformActive{
+    display: none;
+}
+
+/*设置右边的活动介绍*/
+.i-part-5-2-person{
+    width: 380px;
+    height: 500px;
+    float: right;
+    padding: 30px;
+    background: white;
+    overflow: hidden;
+}
+.i-part-5-2-person h3{
+    color: blue;
+    font-size: 24px;
+}
+.i-part-5-2-person a{
+    color: red;
+}
+.i-part-5-2-person p{
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 0;
+}
+/*设置中将名单*/
+.i-part-5-2-person2{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+}
+.i-part-5-2-person ul{
+    position: relative;
+}
+.i-part-5-2-person li{
+    position:relative;
+    zoom: 1;
+}
+.i-part-5-2-person li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.i-part-5-2-person .text-left{
+    float: left;
+}
+.i-part-5-2-person .text-right{
+    float: right;
+}
+
+/*设置抽奖后弹出框*/
+.Popout{
+    width: 460px;
+    left: 50%;
+    top: 50%;
+    margin-left:-230px;
+    background: white;
+    position:fixed;
+    display: none;
+}
+.Popout1{
+    width: 70px;
+    height: 70px;
+    background: url("../img/pout2.png")no-repeat;
+    margin:40px auto 20px;
+}
+.Popout2  p{
+    line-height: 22px;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+}
+.Popout3{
+    padding: 20px 0;
+}
+.Popout3 a{
+    display: inline-block;
+    font-size: 22px;
+    width: 200px;
+    line-height: 50px;
+    height: 50px;
+    border: 1px #EBEBEB solid;
+    color: black;
+}
+.Popout3 a:hover{
+    border-color: black;
+    color: red;
+}
+.Popout4{
+    width: 15px;
+    height: 14px;
+    top: 10px;
+    right: 10px;
+    background: url("../img/pout1.png")no-repeat;
+}
+.Popout4:hover{
+    cursor: pointer;
+}
